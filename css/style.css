@@ -1,0 +1,121 @@
+body { width: 100%; margin: auto; background: lightgoldenrodyellow; }
+.container { background: #fff; }
+select option:disabled { background: #ccc; }
+.tile-container {
+    overflow: inherit;
+    display: none;
+}
+.tile {
+    height: 80px;
+    width: 100%;
+    margin: 5px 0px;
+    float: left;
+    background-color: #e3e5f7;
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.padding-right-none { padding-right: 0px; }
+.pointer-events-none { pointer-events: none; }
+.cursor-not-allowed { cursor: not-allowed; }
+.player_name { text-transform: capitalize; }
+.current_move span { text-transform: capitalize; }
+.alert { text-transform: capitalize; }
+.winning_count { }
+
+.tile_strike {}
+.horizontal_tile_strike {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 43%;
+}
+.horizontal_tile_strike_last {
+    position: absolute;
+    width: 88%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 43%;
+}
+.vertical_tile_strike {
+    position: absolute;
+    width: 88%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 60%;
+    transform: rotate(90deg);
+    bottom: 0;
+}
+.vertical_tile_strike_last {
+    position: absolute;
+    width: 66%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 44%;
+    transform: rotate(90deg);
+    bottom: 0;
+    z-index: 1;
+    right: 10%;
+}
+.slide_tile_strike {
+    position: absolute;
+    width: 125%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 56%;
+    transform: rotate(37deg);
+    left: 4%;
+    z-index: 1;
+}
+.slide_tile_strike_last {
+    position: absolute;
+    width: 103%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 44%;
+    transform: rotate(37deg);
+    z-index: 99;
+    left: 4%;
+}
+
+.rev_slide_tile_strike {
+    position: absolute;
+    width: 125%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 56%;
+    transform: rotate(143deg);
+    right: -10%;
+    z-index: 1;
+}
+.rev_slide_tile_strike_last {
+    position: absolute;
+    width: 103%;
+    padding: 0;
+    background: #000;
+    margin: 0;
+    height: 10%;
+    top: 44%;
+    transform: rotate(143deg);
+    z-index: 99;
+    right: -10%;
+}
